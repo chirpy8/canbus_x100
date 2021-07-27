@@ -1,0 +1,415 @@
+EESchema Schematic File Version 4
+LIBS:Axle Ratio Change-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Can Bus repeater and monitor"
+Date ""
+Rev ""
+Comp ""
+Comment1 "Author - Chirpy"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L myOwnLib:ARDUINO_PRO_MINI_GENERIC B?
+U 1 1 5E71EC70
+P 5850 2200
+F 0 "B?" H 5850 3260 45  0000 C CNN
+F 1 "ARDUINO_PRO_MINI_GENERIC" H 5850 3176 45  0000 C CNN
+F 2 "ARDUINO_PRO_MINI" H 5850 3150 20  0001 C CNN
+F 3 "" H 5850 2200 50  0001 C CNN
+F 4 "XXX-00000" H 5850 3081 60  0000 C CNN "Field4"
+	1    5850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L myOwnLib:CanBusModule1 A?
+U 1 1 5E7223EF
+P 3600 4850
+F 0 "A?" H 3600 5465 50  0000 C CNN
+F 1 "CanBusModule1" H 3600 5374 50  0000 C CNN
+F 2 "myOwnLib:CanBusModule1" H 3400 5500 50  0001 C CNN
+F 3 "" H 3400 5500 50  0001 C CNN
+	1    3600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L myOwnLib:CanBusModule1 A?
+U 1 1 5E723150
+P 5600 4850
+F 0 "A?" H 5600 5465 50  0000 C CNN
+F 1 "CanBusModule1" H 5600 5374 50  0000 C CNN
+F 2 "myOwnLib:CanBusModule1" H 5400 5500 50  0001 C CNN
+F 3 "" H 5400 5500 50  0001 C CNN
+	1    5600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L myOwnLib:CanBusModule1 A?
+U 1 1 5E7238E6
+P 7850 4850
+F 0 "A?" H 7850 5465 50  0000 C CNN
+F 1 "CanBusModule1" H 7850 5374 50  0000 C CNN
+F 2 "myOwnLib:CanBusModule1" H 7650 5500 50  0001 C CNN
+F 3 "" H 7650 5500 50  0001 C CNN
+	1    7850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4600 2850 4600
+Wire Wire Line
+	2850 4600 2850 3550
+Wire Wire Line
+	2850 3550 4800 3550
+Wire Wire Line
+	5200 4600 4800 4600
+Wire Wire Line
+	4800 4600 4800 3550
+Connection ~ 4800 3550
+Wire Wire Line
+	4800 3550 6950 3550
+Wire Wire Line
+	7450 4600 6950 4600
+Wire Wire Line
+	6950 4600 6950 3550
+Connection ~ 6950 3550
+Wire Wire Line
+	6950 3550 7400 3550
+Wire Wire Line
+	7400 2300 6300 2300
+Wire Wire Line
+	7400 2300 7400 3550
+Wire Wire Line
+	3200 4800 2550 4800
+Wire Wire Line
+	2550 3250 4550 3250
+Wire Wire Line
+	2550 3250 2550 4800
+Wire Wire Line
+	6300 2400 7000 2400
+Wire Wire Line
+	7000 2400 7000 3250
+Wire Wire Line
+	5200 4800 4550 4800
+Wire Wire Line
+	4550 4800 4550 3250
+Connection ~ 4550 3250
+Wire Wire Line
+	4550 3250 6700 3250
+Wire Wire Line
+	7450 4800 6700 4800
+Wire Wire Line
+	6700 4800 6700 3250
+Connection ~ 6700 3250
+Wire Wire Line
+	6700 3250 7000 3250
+Wire Wire Line
+	3200 4700 2700 4700
+Wire Wire Line
+	2700 4700 2700 3400
+Wire Wire Line
+	2700 3400 4700 3400
+Wire Wire Line
+	7200 3400 7200 2500
+Wire Wire Line
+	7200 2500 6300 2500
+Wire Wire Line
+	5200 4700 4700 4700
+Wire Wire Line
+	4700 4700 4700 3400
+Connection ~ 4700 3400
+Wire Wire Line
+	4700 3400 6850 3400
+Wire Wire Line
+	7450 4700 6850 4700
+Wire Wire Line
+	6850 4700 6850 3400
+Connection ~ 6850 3400
+Wire Wire Line
+	6850 3400 7200 3400
+Wire Wire Line
+	3200 4500 3200 1900
+Wire Wire Line
+	3200 1900 5400 1900
+Wire Wire Line
+	5200 4500 4900 4500
+Wire Wire Line
+	4900 4500 4900 2000
+Wire Wire Line
+	4900 2000 5400 2000
+Wire Wire Line
+	7450 4900 6600 4900
+Wire Wire Line
+	6600 4900 6600 2600
+Wire Wire Line
+	6600 2600 6300 2600
+Wire Wire Line
+	5200 4900 4450 4900
+Wire Wire Line
+	4450 4900 4450 2600
+Wire Wire Line
+	4450 2600 5400 2600
+Wire Wire Line
+	3200 4900 2400 4900
+Wire Wire Line
+	2400 4900 2400 2500
+Wire Wire Line
+	2400 2500 5400 2500
+Wire Wire Line
+	7450 4500 7250 4500
+Wire Wire Line
+	7250 4500 7250 3750
+Wire Wire Line
+	7250 3750 7600 3750
+Wire Wire Line
+	7600 3750 7600 2200
+Wire Wire Line
+	7600 2200 6300 2200
+Wire Wire Line
+	3200 5000 2850 5000
+Wire Wire Line
+	2850 5000 2850 5800
+Wire Wire Line
+	2850 5800 3150 5800
+Wire Wire Line
+	9650 1600 9650 5800
+Wire Wire Line
+	7450 5000 7050 5000
+Wire Wire Line
+	7050 5000 7050 5800
+Connection ~ 7050 5800
+Wire Wire Line
+	7050 5800 7400 5800
+Wire Wire Line
+	4550 5000 4550 5800
+Connection ~ 4550 5800
+Wire Wire Line
+	4550 5800 4900 5800
+Wire Wire Line
+	3200 5100 3150 5100
+Wire Wire Line
+	3000 5100 3000 5600
+Wire Wire Line
+	9300 5600 9300 1800
+Wire Wire Line
+	7450 5100 7400 5100
+Wire Wire Line
+	7250 5100 7250 5600
+Connection ~ 7250 5600
+Wire Wire Line
+	7250 5600 9300 5600
+$Comp
+L power:GND #PWR?
+U 1 1 5E73EE47
+P 2600 5800
+F 0 "#PWR?" H 2600 5550 50  0001 C CNN
+F 1 "GND" H 2605 5627 50  0000 C CNN
+F 2 "" H 2600 5800 50  0001 C CNN
+F 3 "" H 2600 5800 50  0001 C CNN
+	1    2600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5800 2850 5800
+Connection ~ 2850 5800
+$Comp
+L power:+5V #PWR?
+U 1 1 5E740F08
+P 2550 5550
+F 0 "#PWR?" H 2550 5400 50  0001 C CNN
+F 1 "+5V" H 2565 5723 50  0000 C CNN
+F 2 "" H 2550 5550 50  0001 C CNN
+F 3 "" H 2550 5550 50  0001 C CNN
+	1    2550 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5550 2550 5600
+Wire Wire Line
+	2550 5600 3000 5600
+Connection ~ 3000 5600
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E74335F
+P 2250 5600
+F 0 "#FLG?" H 2250 5675 50  0001 C CNN
+F 1 "PWR_FLAG" H 2250 5773 50  0000 C CNN
+F 2 "" H 2250 5600 50  0001 C CNN
+F 3 "~" H 2250 5600 50  0001 C CNN
+	1    2250 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5600 2550 5600
+Connection ~ 2550 5600
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5E7459E6
+P 2250 5800
+F 0 "#PWR?" H 2250 5600 50  0001 C CNN
+F 1 "GNDPWR" H 2254 5646 50  0000 C CNN
+F 2 "" H 2250 5750 50  0001 C CNN
+F 3 "" H 2250 5750 50  0001 C CNN
+	1    2250 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5800 2600 5800
+Connection ~ 2600 5800
+Wire Wire Line
+	6300 1600 6500 1600
+Wire Wire Line
+	6300 1800 6800 1800
+$Comp
+L Device:C_Small C?
+U 1 1 5E74FDA6
+P 6800 1700
+F 0 "C?" H 6892 1746 50  0000 L CNN
+F 1 "100 nF" H 6892 1655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6800 1700 50  0001 C CNN
+F 3 "~" H 6800 1700 50  0001 C CNN
+	1    6800 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 1600
+Wire Wire Line
+	6800 1600 9650 1600
+Connection ~ 6800 1800
+Wire Wire Line
+	6800 1800 9300 1800
+$Comp
+L Device:C_Small C?
+U 1 1 5E76277A
+P 3150 5350
+F 0 "C?" H 3242 5396 50  0000 L CNN
+F 1 "100 nF" H 3242 5305 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 3150 5350 50  0001 C CNN
+F 3 "~" H 3150 5350 50  0001 C CNN
+	1    3150 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5250 3150 5100
+Connection ~ 3150 5100
+Wire Wire Line
+	3150 5100 3000 5100
+Wire Wire Line
+	3150 5450 3150 5800
+Connection ~ 3150 5800
+Wire Wire Line
+	3150 5800 4550 5800
+Wire Wire Line
+	4550 5000 5200 5000
+Wire Wire Line
+	3000 5600 4700 5600
+Wire Wire Line
+	4700 5600 4700 5100
+Wire Wire Line
+	4700 5100 4900 5100
+Connection ~ 4700 5600
+Wire Wire Line
+	4700 5600 7250 5600
+$Comp
+L Device:C_Small C?
+U 1 1 5E777E62
+P 4900 5350
+F 0 "C?" H 4992 5396 50  0000 L CNN
+F 1 "100 nF" H 4992 5305 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4900 5350 50  0001 C CNN
+F 3 "~" H 4900 5350 50  0001 C CNN
+	1    4900 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5250 4900 5100
+Connection ~ 4900 5100
+Wire Wire Line
+	4900 5100 5200 5100
+Wire Wire Line
+	4900 5450 4900 5800
+Connection ~ 4900 5800
+Wire Wire Line
+	4900 5800 7050 5800
+$Comp
+L Device:C_Small C?
+U 1 1 5E77CE4F
+P 7400 5350
+F 0 "C?" H 7492 5396 50  0000 L CNN
+F 1 "100 nF" H 7492 5305 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 7400 5350 50  0001 C CNN
+F 3 "~" H 7400 5350 50  0001 C CNN
+	1    7400 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5250 7400 5100
+Connection ~ 7400 5100
+Wire Wire Line
+	7400 5100 7250 5100
+Wire Wire Line
+	7400 5450 7400 5800
+Connection ~ 7400 5800
+Wire Wire Line
+	7400 5800 9650 5800
+$Comp
+L SparkFun-Connectors:CONN_02 J?
+U 1 1 5E788526
+P 1600 5700
+F 0 "J?" H 1558 6110 45  0000 C CNN
+F 1 "CONN_02" H 1558 6026 45  0000 C CNN
+F 2 "1X02" H 1600 5950 20  0001 C CNN
+F 3 "" H 1600 5700 50  0001 C CNN
+F 4 "XXX-00000" H 1558 5931 60  0000 C CNN "Field4"
+	1    1600 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5800 1850 5800
+Wire Wire Line
+	1850 5800 1850 5700
+Wire Wire Line
+	1850 5700 1700 5700
+Connection ~ 2250 5800
+Wire Wire Line
+	1700 5600 2250 5600
+Connection ~ 2250 5600
+Wire Wire Line
+	5400 1800 5200 1800
+Wire Wire Line
+	5200 1800 5200 1300
+Wire Wire Line
+	5200 1300 6500 1300
+Wire Wire Line
+	6500 1300 6500 1600
+Connection ~ 6500 1600
+Wire Wire Line
+	6500 1600 6800 1600
+NoConn ~ 5400 1500
+NoConn ~ 5400 1600
+NoConn ~ 5400 1700
+NoConn ~ 5400 2100
+NoConn ~ 5400 2200
+NoConn ~ 5400 2300
+NoConn ~ 5400 2400
+NoConn ~ 5400 2800
+NoConn ~ 5400 2900
+NoConn ~ 6300 1500
+NoConn ~ 6300 1700
+NoConn ~ 6300 1900
+NoConn ~ 6300 2000
+NoConn ~ 6300 2100
+NoConn ~ 6300 2800
+NoConn ~ 6300 2900
+NoConn ~ 4000 4500
+NoConn ~ 4000 4600
+NoConn ~ 4000 5000
+NoConn ~ 4000 5100
+NoConn ~ 6000 4500
+NoConn ~ 6000 4600
+NoConn ~ 6000 5000
+NoConn ~ 6000 5100
+$EndSCHEMATC
