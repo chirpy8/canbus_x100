@@ -510,7 +510,7 @@ void setup() {
   //setup pins and modes
 
   pinMode(8, OUTPUT);  //chip select for TCM facing module
-  digitalWrite(8, LOW);
+  digitalWrite(8, HIGH);
 
   pinMode(9, OUTPUT);  //chip select ECU facing module
   digitalWrite(9, HIGH);
@@ -537,7 +537,7 @@ void setup() {
   DELAY_CYCLES(18); //receive
   PORTB = 0x07; //raise chip select after SPI transfers
   
-  DELAY_CYCLES(16);
+  DELAY_CYCLES(500);//wait for chip to reset
   
   //configure MCP2515
   
@@ -603,7 +603,7 @@ void setup() {
   SPDR = 0xc0; //reset MCP2515
   DELAY_CYCLES(18); //receive
   PORTB = 0x07; //raise chip select after SPI transfers
-  DELAY_CYCLES(2);
+  DELAY_CYCLES(500); //wait for chip to reset
 
   
   //configure MCP2515
